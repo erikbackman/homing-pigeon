@@ -1,0 +1,26 @@
+{
+    "arrayfire-haskell": {
+        "branch": "master",
+        "description": "Haskell bindings to ArrayFire",
+        "homepage": "http://hackage.haskell.org/package/arrayfire",
+        "owner": "arrayfire",
+        "repo": "arrayfire-haskell",
+        "rev": "5d621602bb925ce5122a66011003498cbe638e2b",
+        "sha256": "0fmph0jwn85amfqjhqv68dvrc6flny2vlmnhmh1nzd4xd7y9k0hr",
+        "type": "tarball",
+        "url": "https://github.com/arrayfire/arrayfire-haskell/archive/5d621602bb925ce5122a66011003498cbe638e2b.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection",
+        "homepage": null,
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "d14ae62671fd4eaec57427da1e50f91d6a5f9605",
+        "sha256": "1d5r94b693pri0prwbv3009fnanjmpd4jyldfrhmhjdwiknbqzlr",
+        "type": "tarball",
+        "url": "https://github.com/nixos/nixpkgs/archive/d14ae62671fd4eaec57427da1e50f91d6a5f9605.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}

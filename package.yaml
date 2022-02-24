@@ -1,0 +1,33 @@
+name: homing-pigeon
+version: 0.0.1.0
+synopsis: ...
+description: See README at <https://github.com/chiroptical/homing-pigeon
+author: Barry Moore II
+github: chiroptical/homing-pigeon
+category: ...
+license: BSD-3-Clause
+
+dependencies:
+  - base >=4.11 && < 5
+  - arrayfire
+
+library:
+  source-dirs: src
+
+executables:
+  homing-pigeon-exe:
+    source-dirs: app
+    main: Main.hs
+    dependencies:
+      - homing-pigeon
+
+tests:
+  homing-pigeon-test:
+    source-dirs: test
+    main: Main.hs
+    ghc-options:
+      - -Wall
+      - -threaded
+    dependencies:
+      - homing-pigeon
+      - hedgehog
