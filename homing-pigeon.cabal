@@ -29,8 +29,7 @@ library
   hs-source-dirs:
       src
   build-depends:
-      arrayfire
-    , base >=4.11 && <5
+      base >=4.11 && <5
   default-language: Haskell2010
 
 executable homing-pigeon-exe
@@ -40,8 +39,7 @@ executable homing-pigeon-exe
   hs-source-dirs:
       app
   build-depends:
-      arrayfire
-    , base >=4.11 && <5
+      base >=4.11 && <5
     , homing-pigeon
   default-language: Haskell2010
 
@@ -54,8 +52,7 @@ test-suite homing-pigeon-test
       test
   ghc-options: -Wall -threaded
   build-depends:
-      arrayfire
-    , base >=4.11 && <5
+      base >=4.11 && <5
     , hedgehog
     , homing-pigeon
   default-language: Haskell2010

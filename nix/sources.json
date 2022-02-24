@@ -1,14 +1,14 @@
 {
-    "arrayfire-haskell": {
+    "hasktorch": {
         "branch": "master",
-        "description": "Haskell bindings to ArrayFire",
-        "homepage": "http://hackage.haskell.org/package/arrayfire",
-        "owner": "arrayfire",
-        "repo": "arrayfire-haskell",
-        "rev": "5d621602bb925ce5122a66011003498cbe638e2b",
-        "sha256": "0fmph0jwn85amfqjhqv68dvrc6flny2vlmnhmh1nzd4xd7y9k0hr",
+        "description": "Tensors and neural networks in Haskell",
+        "homepage": "http://hasktorch.org",
+        "owner": "hasktorch",
+        "repo": "hasktorch",
+        "rev": "5f97cd3fa1647092de85e4675aebdc3da1967098",
+        "sha256": "1z27042060g49a0zz9w9rv733paa4nj97rdawvf74bvmlrxqpw63",
         "type": "tarball",
-        "url": "https://github.com/arrayfire/arrayfire-haskell/archive/5d621602bb925ce5122a66011003498cbe638e2b.tar.gz",
+        "url": "https://github.com/hasktorch/hasktorch/archive/5f97cd3fa1647092de85e4675aebdc3da1967098.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {

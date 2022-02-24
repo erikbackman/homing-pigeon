@@ -8,7 +8,7 @@ category: ...
 license: BSD-3-Clause
 
 dependencies:
-  - base >=4.11 && < 5
+- base >=4.11 && < 5
 
 library:
   source-dirs: src
