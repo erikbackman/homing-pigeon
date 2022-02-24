@@ -1,16 +1,4 @@
 {
-    "hasktorch": {
-        "branch": "master",
-        "description": "Tensors and neural networks in Haskell",
-        "homepage": "http://hasktorch.org",
-        "owner": "hasktorch",
-        "repo": "hasktorch",
-        "rev": "5f97cd3fa1647092de85e4675aebdc3da1967098",
-        "sha256": "1z27042060g49a0zz9w9rv733paa4nj97rdawvf74bvmlrxqpw63",
-        "type": "tarball",
-        "url": "https://github.com/hasktorch/hasktorch/archive/5f97cd3fa1647092de85e4675aebdc3da1967098.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "nixpkgs": {
         "branch": "nixpkgs-unstable",
         "description": "Nix Packages collection",
