@@ -9,7 +9,6 @@ license: BSD-3-Clause
 
 dependencies:
   - base >=4.11 && < 5
-  - arrayfire
 
 library:
   source-dirs: src
