@@ -8,6 +8,7 @@
       https://hasktorch.cachix.org
     ];
     trusted-public-keys = [
+      cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
       hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=
       hasktorch.cachix.org-1:wLjNS6HuFVpmzbmv01lxwjdCOtWRD8pQVR3Zr/wVoQc=
     ];
@@ -33,7 +34,6 @@
                 cabal = {};
                 hlint = {};
                 haskell-language-server = {};
-                fourmolu = {};
                 hpack = {};
               };
               # Non-Haskell shell tools go here
