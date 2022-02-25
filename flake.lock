@@ -201,15 +201,11 @@
         "iohkNix": "iohkNix",
         "libtorch-nix": "libtorch-nix",
         "nixpkgs": [
-          "hasktorch",
-          "haskell-nix",
-          "nixpkgs-unstable"
+          "nixpkgs"
         ],
         "pre-commit-hooks": "pre-commit-hooks",
         "tokenizers": "tokenizers",
         "utils": [
-          "hasktorch",
-          "haskell-nix",
           "flake-utils"
         ]
       },
