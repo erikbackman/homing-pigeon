@@ -1,1 +1,1 @@
-pkgs: pkgs.haskell.packages.ghc8107.callCabal2nix "homing-pigeon" ./. {}
+pkgs: pkgs.haskell.packages.ghc8107.callCabal2nix "homing-pigeon" ./. { }

@@ -8,7 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.utils.follows = "flake-utils";
-
       url = "github:hasktorch/hasktorch";
     };
   };
@@ -21,15 +20,16 @@
           config.allowBroken = true;
         };
         homingPigeon = import ./homing-pigeon.nix pkgs;
-        
-      in rec {
-        
+
+      in
+      rec {
+
         packages = flake-utils.lib.flattenTree {
           inherit homingPigeon;
         };
 
         devShell = import ./shell.nix pkgs;
-        
+
         defaultPackage = packages.homingPigeon;
       });
 }
