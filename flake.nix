@@ -1,11 +1,24 @@
 {
   description = "Homing Pigeon";
+
+  nixConfig = {
+    substituters = [
+      https://cache.nixos.org
+      https://hydra.iohk.io
+      https://hasktorch.cachix.org
+    ];
+    trusted-public-keys = [
+      hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=
+      hasktorch.cachix.org-1:wLjNS6HuFVpmzbmv01lxwjdCOtWRD8pQVR3Zr/wVoQc=
+    ];
+  };
+
   inputs.haskellNix.url = "github:input-output-hk/haskell.nix";
   inputs.nixpkgs.follows = "haskellNix/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  inputs.hasktorch.url = "https://github.com/hasktorch/hasktorch";
+  # inputs.hasktorch.url = "github:hasktorch/hasktorch";
   outputs = { self, nixpkgs, flake-utils, haskellNix }:
-    flake-utils.lib.eachSystem [ "x86_64-linux" "x86_64-darwin" ] (system:
+    flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
     let
       overlays = [ haskellNix.overlay
         (final: prev: {
