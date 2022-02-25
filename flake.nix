@@ -8,16 +8,17 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
       inputs.utils.follows = "flake-utils";
+
       url = "github:hasktorch/hasktorch";
     };
   };
 
-  outputs = { self, nixpkgs, flake-utils, ... }:
+  outputs = { self, nixpkgs, flake-utils, hasktorch, ... }:
     flake-utils.lib.eachSystem [ "x86_64-linux" ] (system:
       let
         pkgs = import nixpkgs {
           inherit system;
-          allowBroken = true;
+          config.allowBroken = true;
         };
         homingPigeon = import ./homing-pigeon.nix pkgs;
         
