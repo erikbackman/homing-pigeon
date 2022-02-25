@@ -9,6 +9,7 @@ pkgs: pkgs.mkShell {
       pkgs.haskellPackages.fourmolu
       pkgs.haskellPackages.hlint
       pkgs.haskellPackages.hpack
+      pkgs.haskellPackages.haskell-language-server
 
       # Nix tools
       pkgs.nixpkgs-fmt
